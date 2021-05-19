@@ -24,5 +24,7 @@ services:
       WORDPRESS_DB_USER: myroot
       WORDPRESS_DB_PASSWORD: kim1429800
       WORDPRESS_DB_NAME: wordpress
+    volumes: 
+       - ./wordpress.ini:/usr/local/etc/php/conf.d/wordpress.ini 
 volumes:
   db_data: {}
